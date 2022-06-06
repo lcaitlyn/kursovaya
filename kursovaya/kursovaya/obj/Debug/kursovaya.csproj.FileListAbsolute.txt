@@ -1,0 +1,12 @@
+C:\Users\kirob\Desktop\kursovaya\kursovaya\bin\Debug\kursovaya.exe.config
+C:\Users\kirob\Desktop\kursovaya\kursovaya\bin\Debug\kursovaya.exe
+C:\Users\kirob\Desktop\kursovaya\kursovaya\bin\Debug\kursovaya.pdb
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.csproj.AssemblyReference.cache
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.csproj.SuggestedBindingRedirects.cache
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.Form1.resources
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.Properties.Resources.resources
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.csproj.GenerateResource.cache
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.csproj.CoreCompileInputs.cache
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.exe
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.pdb
+C:\Users\kirob\Desktop\kursovaya\kursovaya\obj\Debug\kursovaya.Form2.resources
