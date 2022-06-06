@@ -182,12 +182,12 @@ namespace kursovaya
 
         private void button8_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Общее число: " + portal.getFullLen().ToString());
+            MessageBox.Show("Общее число новостей: " + portal.getFullLen().ToString());
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Общее число новостей: " + portal.getCurrentLen().ToString());
+            MessageBox.Show("Общее число: " + portal.getCurrentLen().ToString());
         }
 
         private void button10_Click(object sender, EventArgs e)

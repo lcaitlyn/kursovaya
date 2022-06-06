@@ -8,46 +8,55 @@ namespace kursovaya
 {
     internal class News
     {
-        private string title;
-        private string date;
-        private string text;
+        private string title;   // название
+        private string date;    // дата создания
+        private string text;    // содержимое
         private News next;
-        public News (string title, string date, string text)
+
+        public News (string title, string date, string text) // конструктор
         {
             this.title = title;
             this.date = date;
             this.text = text;
             this.next = null;
         }
-        public string getTitle()
+
+        public string getTitle() // получение названия
         {
             return title;
         }
-        public string getDate()
+
+        public string getDate() // получение даты
         {
             return date;
         }
-        public string getText()
+
+        public string getText() // получение содержимого
         {
             return text;
         }
-        public News getNext()
+
+        public News getNext() // получение следующего элемента
         {
             return next;
         }
-        public void setTitle(string text)
+
+        public void setTitle(string text) // установка названия
         {
             this.text = text;
         }
-        public void setDate(string date)
+
+        public void setDate(string date) // установка даты
         {
             this.date = date;
         }
-        public void setText(string text)
+
+        public void setText(string text) // установка содержимого
         {
             this.text = text;
         }
-        public void setNext(News next)
+
+        public void setNext(News next) // установка следующего элемента
         {
             this.next = next;
         }
@@ -55,36 +64,36 @@ namespace kursovaya
 
     internal class Section
     {
-        private string name;
-        private News HeadNew = null;
-        private int news_len = 0;
-    
-        public Section(string name)
+        private string name;        // название раздела
+        private News HeadNew = null;// начало новости раздела
+        private int news_len = 0;   // количество новостей
+
+        public Section(string name) // конструктор
         {
             this.name = name;
         }
 
-        public string getName()
+        public string getName() //получение имени
         {
             return this.name;
         }
 
-        public News GetHeadNew()
+        public News GetHeadNew() //получение начала раздела
         {
             return this.HeadNew;
         }
 
-        public int getLen()
+        public int getLen() //получение количества новостей
         {
             return news_len;
         }
 
-        public void setName(string name)
+        public void setName(string name) // установка имени раздела 
         {
             this.name = name;
         }
 
-        public string getNewsTitles()
+        public string getNewsTitles() // получение названия всех новостей в разделе
         {
             if (news_len == 0)
                 return null;
@@ -101,7 +110,7 @@ namespace kursovaya
             return info;
         }
 
-        public string getTitle(int i)
+        public string getTitle(int i) //получение названия конкретной новости
         {
             if (HeadNew == null)
                 return null;
@@ -115,7 +124,7 @@ namespace kursovaya
             }
         }
 
-        public string getDate(int i)
+        public string getDate(int i) //получение даты конкретной новости 
         {
             if (HeadNew == null)
                 return null;
@@ -129,7 +138,7 @@ namespace kursovaya
             }
         }
 
-        public string getText(int i)
+        public string getText(int i) //получение текста конкретной новости
         {
             if (HeadNew == null)
                 return null;
@@ -143,7 +152,7 @@ namespace kursovaya
             }
         }
 
-        public string getLastTitle()
+        public string getLastTitle()  //получение названия последней новости
         {
             if (HeadNew == null)
                 return null;
@@ -153,7 +162,7 @@ namespace kursovaya
             return tmp.getTitle();
         }
 
-        public string getNewsDate()
+        public string getNewsDate() //получение всех дат новостей
         {
             if (news_len == 0)
                 return null;
@@ -170,7 +179,7 @@ namespace kursovaya
             return info;
         }
         
-        public string getNewsText()
+        public string getNewsText() //получение текста всех новостей
         {
             if (news_len == 0)
                 return null;
@@ -187,7 +196,7 @@ namespace kursovaya
             return info;
         }
 
-        public News getNews(string find)
+        public News getNews(string find) //получение текста всех новостей
         {
             News tmp = HeadNew;
             while (tmp != null)
@@ -199,7 +208,7 @@ namespace kursovaya
             return null;
         }
 
-        public void setNews(string name, string date, string text)
+        public void setNews(string name, string date, string text) // добавление новости
         {
             News tmp = new News(name, date, text);
             
@@ -215,7 +224,7 @@ namespace kursovaya
             this.news_len++;
         }
 
-        public void setTitle(string title, int i)
+        public void setTitle(string title, int i) // установка нового названия конкретной новост
         {
             if (HeadNew == null)
                 return;
@@ -229,7 +238,7 @@ namespace kursovaya
             }
         }
 
-        public void setDate(string date, int i)
+        public void setDate(string date, int i) // установка новой даты конкретной новости
         {
             if (HeadNew == null)
                 return;
@@ -243,7 +252,7 @@ namespace kursovaya
             }
         }
 
-        public void setText(string text, int i)
+        public void setText(string text, int i) // установка нового текста конкретной новости
         {
             if (HeadNew == null)
                 return;
@@ -257,7 +266,7 @@ namespace kursovaya
             }
         }
 
-        public void deleteNews()
+        public void deleteNews() // удалить новость
         {
             if (HeadNew == null || this.news_len == 0)
                 return;
